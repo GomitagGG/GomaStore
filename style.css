@@ -339,6 +339,13 @@ header h1 {
     width: 100%;
 }
 
+.video-destacado > div iframe,
+.video-destacado > div video {
+    flex: 1;
+    min-width: 300px;
+    object-fit: cover;
+}
+
 .proximamente {
     font-size: 28px;
     font-weight: bold;
