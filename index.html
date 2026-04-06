@@ -90,7 +90,7 @@
             
             <h2>Elden Ring</h2>
             
-            <img src="Elden-Ring.jpg" alt="Elden Ring" class="imagen-modal">
+            <video src="eldenRing.mp4" alt="Elden Ring" class="imagen-modal" controls></video>
             
             <div class="seccion">
                 <h3>Información General</h3>
@@ -129,7 +129,7 @@
             
             <h2>Far Cry 5</h2>
             
-            <img src="Far-Cry-5.jpg" alt="Far Cry 5" class="imagen-modal">
+            <video src="farCry5.mp4" alt="Far Cry 5" class="imagen-modal" controls></video>
             
             <div class="seccion">
                 <h3>Información General</h3>
@@ -204,7 +204,7 @@
             
             <h2>Minecraft</h2>
             
-            <img src="Minecraft.jpg" alt="Minecraft" class="imagen-modal">
+            <video src="minecraft.mp4" alt="Minecraft" class="imagen-modal" controls></video>
             
             <div class="seccion">
                 <h3>Información General</h3>
@@ -241,7 +241,7 @@
             
             <h2>Hogwarts Legacy</h2>
             
-            <img src="howard-legacy,png.jpg" alt="Hogwarts Legacy" class="imagen-modal">
+            <video src="hogwartsLegacy.mp4" alt="Hogwarts Legacy" class="imagen-modal" controls></video>
             
             <div class="seccion">
                 <h3>Información General</h3>
@@ -280,7 +280,7 @@
             
             <h2>Red Dead Redemption 2</h2>
             
-            <img src="red dead.jpg" alt="Red Dead Redemption 2" class="imagen-modal">
+            <video src="redDeadRedemption2.mp4" alt="Red Dead Redemption 2" class="imagen-modal" controls></video>
             
             <div class="seccion">
                 <h3>Información General</h3>
@@ -310,18 +310,34 @@
             <button class="boton-comprar">Comprar Ahora</button>
         </div>
     </div>
-        <div class ="formulario">
-<form class="contact-form" action="thx.html" method="POST">
-             <h2 class="section-title">Formulario de contacto</h2>
-            <input type="text" name="nombre" placeholder="Nombre" required minlength="2">
-            <input type="text" name="apellido" placeholder="Apellido" required minlength="2">
-            <input type="email" name="email" placeholder="Correo electrónico" required>
-            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required minlength="5"></textarea>
-            <a href="gracias.html"><button type="button">Enviar</button></a>
-
-        </form> 
+        <div class="formulario">
+            <form id="formularioContacto" class="contact-form">
+                <h2 class="section-title">Formulario de contacto</h2>
+                
+                <div>
+                    <input type="text" name="nombre" placeholder="Nombre" required minlength="2">
+                    <div id="errorNombre" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <input type="text" name="apellido" placeholder="Apellido" required minlength="2">
+                    <div id="errorApellido" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <div id="errorEmail" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." required minlength="5"></textarea>
+                    <div id="errorMensaje" class="error-message"></div>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-         
+    <script src="retricciones.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
