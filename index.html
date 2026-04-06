@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 GomaGames</h1>
+    </header>
+
+    <div class="container">
+        <h2>Juegos Destacados</h2>
+
+        <div class="games-grid">
+            <!-- Elden Ring -->
+            <div class="game-card" onclick="abrirModal('elden')">
+                <div class="imagen">
+                    <img src="Elden-Ring.jpg" alt="Elden Ring">
+                </div>
+                <div class="info">
+                    <h3>Elden Ring</h3>
+                    <p>RPG, Acción</p>
+                </div>
+            </div>
+
+            <!-- Far Cry 5 -->
+            <div class="game-card" onclick="abrirModal('farcry5')">
+                <div class="imagen">
+                    <img src="far-cry-5.jpg" alt="Far Cry 5">
+                </div>
+                <div class="info">
+                    <h3>Far Cry 5</h3>
+                    <p>Aventura, Acción</p>
+                </div>
+            </div>
+
+            <!-- Skate -->
+            <div class="game-card" onclick="abrirModal('skate')">
+                <div class="imagen">
+                    <img src="skate.jpeg" alt="Skate">
+                </div>
+                <div class="info">
+                    <h3>Skate</h3>
+                    <p>Deportes</p>
+                </div>
+            </div>
+
+            <!-- Minecraft -->
+            <div class="game-card" onclick="abrirModal('minecraft')">
+                <div class="imagen">
+                    <img src="minecraft.jpg" alt="Minecraft">
+                </div>
+                <div class="info">
+                    <h3>Minecraft</h3>
+                    <p>Sandbox, Supervivencia</p>
+                </div>
+            </div>
+
+            <!-- Hogwarts Legacy -->
+            <div class="game-card" onclick="abrirModal('howard-legacy')">
+                <div class="imagen">
+                    <img src="howard-legacy,png.jpg" alt="Hogwarts Legacy">
+                </div>
+                <div class="info">
+                    <h3>Hogwarts Legacy</h3>
+                    <p>RPG, Magia</p>
+                </div>
+            </div>
+
+            <!-- Red Dead Redemption 2 -->
+            <div class="game-card" onclick="abrirModal('red-dead')">
+                <div class="imagen">
+                    <img src="red dead.jpg" alt="Red Dead Redemption 2">
+                </div>
+                <div class="info">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>Acción, Aventura</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Elden Ring -->
+    <div id="modal-elden" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('elden')">X</button>
+            
+            <h2>Elden Ring</h2>
+            
+            <img src="Elden-Ring.jpg" alt="Elden Ring" class="imagen-modal">
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> RPG, Acción</p>
+                <p><strong>Desarrollador:</strong> FromSoftware</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $59.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Elden Ring es un RPG de acción épico que combina el desafiante gameplay de FromSoftware con un mundo abierto expansivo. Diseñado en colaboración con George R. R. Martin, ofrece una experiencia única de exploración, combate y descubrimiento.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🌍 Mundo abierto vasto</li>
+                    <li>⚔️ Combate desafiante</li>
+                    <li>🐴 Caballo para explorar</li>
+                    <li>🎨 Historia de George R. R. Martin</li>
+                    <li>👥 Multijugador</li>
+                    <li>🔮 Sistema de magia</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+
+
+     <!-- Modal Far Cry 5 -->
+    <div id="modal-farcry5" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('farcry5')">X</button>
+            
+            <h2>Far Cry 5</h2>
+            
+            <img src="Far-Cry-5.jpg" alt="Far Cry 5" class="imagen-modal">
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> Acción, Aventura</p>
+                <p><strong>Desarrollador:</strong> Ubisoft</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $49.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Far Cry 5 es un juego de acción y aventura desarrollado por Ubisoft. Se desarrolla en el estado ficticio de Hope County, Montana, y presenta un entorno abierto con múltiples actividades y misiones.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🌍 Mundo abierto vasto</li>
+                    <li>⚔️ Combate desafiante</li>
+                    <li>🚗 Vehículos para explorar</li>
+                    <li>👥 Multijugador</li>
+                    <li>🎯 Misiones variadas</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+
+
+     <!-- Modal Skate -->
+    <div id="modal-skate" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('skate')">X</button>
+            
+            <h2>Skate</h2>
+            
+            <video src="skate.mp4" alt="Skate" class="imagen-modal" controls></video>
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> Deportes</p>
+                <p><strong>Desarrollador:</strong> EA Sports</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $69.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Skate es un juego de skateboarding que ofrece una experiencia realista y emocionante. Permite a los jugadores crear sus propios trucos y competir en diferentes escenarios.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🛹 Trucos personalizables</li>
+                    <li>🌍 Escenarios variados</li>
+                    <li>👥 Multijugador</li>
+                    <li>🎯 Desafíos y misiones</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+
+
+     <!-- Modal Minecraft -->
+    <div id="modal-minecraft" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('minecraft')">X</button>
+            
+            <h2>Minecraft</h2>
+            
+            <img src="Minecraft.jpg" alt="Minecraft" class="imagen-modal">
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> Sandbox, Supervivencia</p>
+                <p><strong>Desarrollador:</strong> Mojang Studios</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $26.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Minecraft es un juego de construcción y supervivencia en el que los jugadores pueden crear y destruir diferentes tipos de bloques en un mundo tridimensional generado proceduralmente.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🌍 Mundo abierto infinito</li>
+                    <li>🔨 Construcción creativa</li>
+                    <li>👥 Multijugador</li>
+                    <li>🎯 Modos de juego variados</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+
+ 
+     <!-- Modal Hogwarts Legacy -->
+    <div id="modal-howard-legacy" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('howard-legacy')">X</button>
+            
+            <h2>Hogwarts Legacy</h2>
+            
+            <img src="howard-legacy,png.jpg" alt="Hogwarts Legacy" class="imagen-modal">
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> RPG, Magia</p>
+                <p><strong>Desarrollador:</strong> Avalanche Software</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $54.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Hogwarts Legacy es un juego de rol de acción que te lleva al misterioso mundo de Harry Potter. Crea tu propio mago y descubre secretos ocultos en la escuela de magia de Hogwarts.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🌍 Mundo mágico expansivo</li>
+                    <li>⚔️ Sistema de combate mágico</li>
+                    <li>🐴 Castillo de Hogwarts para explorar</li>
+                    <li>🎨 Historia inmersiva</li>
+                    <li>👥 Experiencia single-player</li>
+                    <li>🔮 Diversos hechizos y misterios</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+
+
+     <!-- Modal Red Dead Redemption 2 -->
+    <div id="modal-red-dead" class="modal">
+        <div class="contenido-modal">
+            <button class="cerrar" onclick="cerrarModal('red-dead')">X</button>
+            
+            <h2>Red Dead Redemption 2</h2>
+            
+            <img src="red dead.jpg" alt="Red Dead Redemption 2" class="imagen-modal">
+            
+            <div class="seccion">
+                <h3>Información General</h3>
+                <p><strong>Género:</strong> Acción, Aventura</p>
+                <p><strong>Desarrollador:</strong> Rockstar Games</p>
+                <p><strong>Plataformas:</strong> PlayStation 4/5, Xbox One/Series X|S, PC</p>
+                <p><strong>Precio:</strong> $39.99</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Descripción</h3>
+                <p>Red Dead Redemption 2 es un juego de acción y aventura épico que combina el desafiante gameplay de Rockstar Games con un mundo abierto expansivo. Explora el salvaje oeste en una experiencia única.</p>
+            </div>
+            
+            <div class="seccion">
+                <h3>Características</h3>
+                <ul>
+                    <li>🌍 Mundo abierto vasto del Salvaje Oeste</li>
+                    <li>⚔️ Combate dinámico</li>
+                    <li>🐴 Caballo para explorar</li>
+                    <li>🎨 Historia épica de venganza</li>
+                    <li>👥 Multijugador</li>
+                    <li>🔮 Misiones variadas y emocionantes</li>
+                </ul>
+            </div>
+            
+            <button class="boton-comprar">Comprar Ahora</button>
+        </div>
+    </div>
+        <div class ="formulario">
+<form class="contact-form" action="thx.html" method="POST">
+             <h2 class="section-title">Formulario de contacto</h2>
+            <input type="text" name="nombre" placeholder="Nombre" required minlength="2">
+            <input type="text" name="apellido" placeholder="Apellido" required minlength="2">
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required minlength="5"></textarea>
+            <a href="gracias.html"><button type="button">Enviar</button></a>
+
+        </form> 
+        </div>
+         
+    <script src="main.js"></script>
+</body>
+</html>
