@@ -13,5 +13,12 @@ function cerrarModal(nombreJuego) {
   var modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = "none";
+    
+    // Pausar y reiniciar el video
+    var video = modal.querySelector('video');
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
   }
 }
