@@ -1,0 +1,2 @@
+# GomaStore
+Pagian de Videojuegos
